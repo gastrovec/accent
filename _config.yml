@@ -8,7 +8,7 @@ baseurl: ""
 site_heading: >
     gastro<span class="faded">vec</span>
 
-email: your@email.com
+# email: your@email.com
 author: yourname
 # This description will show up in google search results
 # (for index page) etc.

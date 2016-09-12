@@ -9,11 +9,11 @@ site_heading: >
     gastro<span class="faded">vec</span>
 
 # email: your@email.com
-author: yourname
+author: GastroVec
 # This description will show up in google search results
 # (for index page) etc.
 description: >
-    accent is, as Trump would put it, the best
+    Procrastinating with data instead of doing our work.
 
 # This will what will show against &copy; in the footer
 copyright: gastrovec
@@ -22,12 +22,7 @@ copyright: gastrovec
 intro: false         # Tip: Remove the span from site_heading if intro is set to true
 # This will be displayed in your intro
 short_bio: >
-    Welcome! This is <span>accent</span>, a mobile friendly theme for Jekyll. The main feature of this
-    theme is that you can change the accent color. Refer the
-    <a class="underline different-highlight" href="http://ankitsultana.me/accent/documentation.html">
-        Documentation
-    </a>
-    to know how.
+    This will be changed at some point
 
 permalink: /:title.html
 

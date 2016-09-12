@@ -12,17 +12,17 @@
     <div class="user-footer">
         <div class="copyright alignable pull-left">
             {% if site.copyright %}
-                <h2> &copy;{{ site.copyright }}</h2>
+                <h2> {{ site.copyright }}</h2>
             {% else %}
-                <h2> &copy;{{ site.title }}</h2>
+                <h2> {{ site.title }}</h2>
             {% endif %}
         </div>
         <div class="alignable pull-right">
             <a target="_blank" href="https://twitter.com/{{ site.twitter_username }}" class="button">
                 @{{ site.twitter_username }}
             </a>
-            <a href="mailto:{{ site.email }}" class="button">
-                mail
+            <a href="https://github.com/gastrovec" class="button">
+                github
             </a>
             <a target="_blank" href="{{ site.url }}{{ site.baseurl }}/feed.xml" class="button">
                 rss

@@ -41,5 +41,5 @@ Obviously, the graph that I collected is fully connected because of the method
 of collection, but since the network is so big I assume it got all linked towns
 or at least most of them.
 
-You can look at the code and the data [here](https://github.com/L3viathan/sister-cities/),
+You can look at the code and the data [**here**](https://github.com/L3viathan/sister-cities/),
 I appreciate input or further work.

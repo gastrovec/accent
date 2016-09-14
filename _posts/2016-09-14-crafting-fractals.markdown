@@ -10,7 +10,7 @@ author_site: https://github.com/sarnthil
 >inability to describe the shape of a cloud, a mountain, a coastline, or a
 >tree. Clouds are not spheres, mountains are not cones, coastlines are not
 >circles, and bark is not smooth, nor does lightning travel in a straight line.  
-> --- _Benoît B. Mandelbrot, The Fractal Geometry of Nature_
+> --- _Benoît B. Mandelbrot, The Fractal Geometry of Nature_{:.highlight}
 
 ![Fractal turtles](/images/fractal_intro.png)
 
@@ -62,4 +62,4 @@ properties](https://en.wikipedia.org/wiki/Sierpinski_carpet).
 I stop here for now cause my turtle doesn't move as fast as I wish.
 
 You can look at the lua scripts for the fractals
-[**here**](https://github.com/sarnthil/crafting-fractals/).
+[here](https://github.com/sarnthil/crafting-fractals/){:.capsule}.

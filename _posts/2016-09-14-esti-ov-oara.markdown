@@ -18,5 +18,6 @@ looking at the raw endings.
 
 ![Screenshot of -ești, -ov, -oara](/images/esti-ov-oara.png)
 
-The result can be found [here](https://static.l3vi.de/esti-ov-oara/), the code
-and data [here](https://github.com/L3viathan/esti-ov-oara).
+The result can be found
+[here](https://static.l3vi.de/esti-ov-oara/){:.capsule}, the code and data
+[here](https://github.com/L3viathan/esti-ov-oara){:.capsule}.

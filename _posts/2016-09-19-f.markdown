@@ -1,0 +1,98 @@
+---
+title: Abusing Python's magic methods&#58; ƒ
+author: L3viathan
+profile_picture: /images/l3viathan.png
+about_stub: Recreational linguistics, distributional gastronomics, and applied galettalogy.
+author_site: https://github.com/L3viathan
+---
+
+Anyone who ever did anything in Python will know of the existence of the
+`__init__` method in classes, which are _sort of_ like a constructor in other
+languages (but not really).  When the Python interpreter creates an instance of
+a class, it looks for a method called `__init__` and calls it on the object
+after creating it. It is a so-called "magic method", because the only thing
+that makes this happen is the _name_ of the method, which magically causes it
+to be called in a specific case.
+
+`__init__` isn't the only such function, there are many others. Some are
+commonly used (like `__str__`), some almost never (like `__new__`). For some
+reason, I'm very fascinated with abusing them to make Python behave weirdly.
+This is about one such case.
+
+When sorting a list of tuples based on the second element of the tuple, you can
+use `operator.itemgetter(1)` as a key function:
+
+{% highlight python %}
+>>> from operator import itemgetter
+>>> l = [(1, 3), (7, 2), (3, 6)]
+>>> sorted(l)
+[(1, 3), (3, 6), (7, 2)]
+>>> sorted(l, key=itemgetter(1))
+[(7, 2), (1, 3), (3, 6)]
+{% endhighlight %}
+
+Similarily, if you want to sort a list of objects based on an attribute, you
+can use `operator.attrgetter`. Sadly, this is not repeatable: If you would want
+to sort a list of tuples of objects by an attribute of the second element of
+the tuples, you'd have to use lambda expressions, which to my eyes don't look
+too nice in these cases. I wanted to try if I could make it more compact.
+
+Ideally, I would like to specify it somehow directly without writing `lambda
+x:`
+
+{% highlight python %}
+sorted(l, key=x[1].some_attr)
+{% endhighlight %}
+
+This means of course that I'd need to have some kind of magical variable `x`
+defined somewhere, which sounds like trouble. I chose to take a different name,
+one that will very likely not be used by anyone else, and one that is still
+short and not hard to type. Not many people know about Python's weird mix of
+supporting some parts of Unicode as parts of identifiers, converting some
+characters to others without telling you (like an ⅿ to an m), and banning the
+use of others. So I chose an allowed unicode character: ƒ (conveniently typable
+on macOS using ⌥f), because of this somehow being related to functional
+programming.
+
+But how do I get an object to work as a key function like that? A key function
+is simply called on every element of the sequence when sorting. But before that
+happens in our case, we want to subscript it and access an attribute of it, in
+any order, and potentially multiple times, and it would be cool if we could do
+even more than that.
+
+Thankfully, one of the magic methods is `__call__` which defined what happens
+when an object is called like a function, and there are other methods to handle
+attribute access (`__getattr__`, with which you need to be careful in order not
+to break everything) and subscripting (`__getitem__`).
+
+So I define a list of actions I want to happen on each item in the sequence
+inside of `__init__` and just append to that list in `__getattr__` and
+`__getitem__`. In `__call__`, I simply call each function in the list of
+actions on the item and return the result at the end. Finally, I do a little
+singleton trick to make it work more than once. And with that, it works. And
+not just as a key function:
+
+{% highlight python %}
+>>> ƒ[1][2]((1, (2, 3, 4)))
+4
+{% endhighlight %}
+
+
+A few minutes later, it supports all other operators I could be bothered about
+implementing, each using the respective magic method:
+
+{% highlight python %}
+>>> ((ƒ[1] + 4) - 2)([7, 8, 9])
+10
+{% endhighlight %}
+
+There was one more interesting challenge: how to make a correct representation
+of the current ƒ object for `repr()`, I solved it by looking at an operator
+precedence table and adding parantheses iff they are needed.
+
+In the end, I threw it in [my Python library of miscellaneous
+things](https://github.com/L3viathan/toolib/), and ƒ is then importable with
+`from toolib.magic import ƒ`.
+
+If you're interested in Python's magic methods in-depth, look at [Rafe Kettler's
+Guide to Magic Methods](http://www.rafekettler.com/magicmethods.html).

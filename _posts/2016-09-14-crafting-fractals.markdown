@@ -33,7 +33,7 @@ I should work on but in the console given by my turtle using
 [ComputerCraft](http://www.computercraft.info).
 
 The first fractal I tried was the [Koch
-Island](https://en.wikipedia.org/wiki/Koch_Island) which is at his first level
+Island](https://en.wikipedia.org/wiki/Koch_Island) which is at its first level
 a square. It fits minecraft pretty well. I think it's a nice maze with which
 you can fill your world...
 

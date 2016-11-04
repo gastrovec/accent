@@ -66,7 +66,7 @@ Yes //into cell 0.
 18 //is zero
 No //equal to cell 0 (the first number)?
 9 //then jump to cell 9 (two lines ahead)
-17 //otherwise to cell 16 (the first containing a 9)
+17 //otherwise to cell 17 (the first containing a 9)
 10 //is the second number 0 too?
 18
 2

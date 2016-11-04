@@ -30,12 +30,12 @@ also renamed to OIL, _Overly Introspective Language_.
 ---
 
 A OIL file consists of a number of lines. When a script is run, the source
-file is read in line by line and each line is put into a band that has as many
+file is read in line by line and each line is put into a tape that has as many
 cells as the file has lines, but can be extended by the code (to a potentially
-discontinuous band). If a line can be casted to an integer, this is done,
+discontinuous tape). If a line can be casted to an integer, this is done,
 otherwise it remains a string.
 
-The band has a head that starts at line/cell 0 (Yes, lines/cells are
+The tape has a head that starts at line/cell 0 (Yes, lines/cells are
 zero-indexed). It reads the value of the current cell as an integer (again
 converting to 0 if needed), and executes the command associated with the value.
 There are 14 different commands, all described in the

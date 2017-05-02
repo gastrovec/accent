@@ -1,0 +1,140 @@
+---
+title: Arimaa
+author: sarnthil
+profile_picture: /images/sarnthil.jpg
+about_stub: I struggle. I live.
+author_site: https://github.com/sarnthil
+---
+![Arimaa table](/images/IMG_8933.jpg)
+
+6 years ago when I started university in Bucharest, after attending some class
+on formal languages I got to know a friend that later introduced me to Arimaa,
+a very new strategy game (compared to chess or Go).
+
+I still feel thankful for meeting this person and getting to know a new game
+that not only made many stressful nights fun, kept my brain busy with mentally
+challenging tasks, but later on, when I left my country, helped me to connect
+with my new friends. I remember the instant reciprocated joy I felt when I met
+someone that was already an Arimaa player.
+
+I don't know how much you care about the fight between humans and machines, but
+Arimaa was designed in such a way that it won't be as easy (as using a classic
+search algorithm) for a bot to win against a top player (as it happened in 1997
+with Deep Blue against Garry Kasparov). Omar Syed put a reward for
+the first program which would be stronger than the human players. The challange
+stayed on for approximately 12 years since 2003, and in 2015 David Wu won the
+prize.
+
+## Basics
+
+You have a common yard with your enemy that looks like an 8x8 grid.
+
+<div style="text-align: center;">
+    <img src="/images/BoardStoneSmall.jpg">
+</div>
+
+
+The two players are: **Gold** and **Silver**. They have in their yard sixteen
+animals each (Gold's animals are denoted by upper case letters and Silver's
+animals by lower case letters): one elephant (E or e), one camel (M or m), two
+horses (H or h), two dogs (D or d), two cats (C or c), and eight rabbits (R or
+r)  in descending order of friendliness strength. The relative friendliness
+strength of each piece lies in its power to *push*, *pull*, or immobilize
+weaker enemy pieces. Four squares of the game-board are *traps*, on which a
+piece can potentially be lost (c3, f3, c6, and f6). The yard is oriented with
+Gold on the southern side and Silver on the northern.
+
+The animals can move in all cardinal directions and the moves are denoted by
+the animal, its original position, and the direction of moving (n for north, w
+for west, e for east, s for south).
+
+A game of Arimaa will start with an empty yard. The names (Gold or Silver) of
+the players will be randomly chosen. Gold sets his animals on the first two
+rows closest to him. One thing I like in the setting up part is that now Gold
+can arrange his animals as he wishes. There is no fixed starting so the animals
+can take any square from the set up space. Once the Gold is done with placing
+his animals Silver sets his animals on his two closest rows. Again, Silver can
+also place his animals freely.
+
+Each player will try to win by  moving one of its rabbits to the enemy's home
+row. A player can move animals up to 4 steps in one turn. An animal can't move
+if it's adjacent to a stronger animal of the enemy's unless any friendly animal
+is also adjacent to it. Move pieces up to 4 steps in one turn. A piece can't
+move if it's adjacent to a stronger piece of opponent's unless any friendly
+piece is adjacent to it.
+
+Then each player will *push* and *pull* enemy's weaker animals with a stronger
+animal of theirs. However, for a *push* or a *pull* **two steps** are required.
+
+
+A piece in a trap, is removed from the game if it has no friendly adjacent
+piece.
+
+## Various tips and wishes for you:
+
+- You are allowed to place your animals on your yard as you wish, only with the
+elephant you can have some issues. The goal is to bring one of your rabbits to
+the last line of the garden of your enemy.
+
+- Take care to not leave your cat to fall in one of the traps. Same for the
+horses and the dogs. They are good animals to have in your yard.
+
+- May your camel be friendly and your elephant aggresive.
+
+- If you play with evil bots on the ladder bot thingy, take a little more care.
+Especially if its name is Ziltoid. Or sharp. Or marwin. Or ...
+
+- If you are gold or you are silver, doesn't really matter. Look up the stats,
+they won't tell you much yet.
+
+- Be aggressive with the elephant, but always watch your traps and assure them.
+Because if you don't you may lose a cat or a rabbit (like Fritzlein does).
+Fritzlein always sets rabbits of C2 and F2 and he is evil too, not as much as
+browni314, aka brown π (some of the early grandmasters).
+
+- Keep your horses always on flanks, if you play symmetric.
+
+- As you saw the vast majority of your pieces are moving as rooks in chess, with
+the exception of rabbits, they don't go back, because they always rush to get
+to the goal, to the enemy end of yard.
+
+- Eliminate as much as you can, but not your own animals. If you will do this you
+might end up winning through elimination.
+
+- Take care to not let your enemy to imobilize you too often, this if you wish to
+have a chance to win at Arimaa.
+
+- The chances of getting your rabbit to the goal increase when the amount of
+animals of your enemy decreases. Oh, well... obvious, just saying.
+
+- Do *not* let your camel be kidnapped. Sign of bad luck. :)
+
+- When your rabbits are getting close the goal and are surrounded by friends is
+good, still watch over that evil enemy.
+
+- I don't plan to get to deep in the explanation of  "camel frame", "horse
+frame", "dog frame", "cat frame", but... those are harsh situations. Like in
+life, you are on the edge then, where the details and the configuration
+matters.
+
+- Keep your friend pieces always close. Even when a friend is cat, or a rabbit.
+
+- Don't panic at any point in the game. You just need to order a bit your
+thoughts as you order your pieces in the beginning.
+
+- There are 4 traps. As romanians say, keep your eyes in 4. Well, I advise you to
+keep your eyes at least in 2.
+
+## Links
+
+- [Beginner tutorial](http://personal.inet.fi/koti/egaga/arimaa-begin/tutorial.html)
+- [Official gameroom](http://arimaa.com/arimaa/)
+- [Beginning Arimaa](https://www.amazon.com/Beginning-Arimaa-Reborn-Computer-Comprehension/dp/0982427409) by Fritz Juhnke
+- [Online Arimaa Wikibook](http://en.wikibooks.org/wiki/Arimaa)
+- [Arimaa Strategies and Tactics](https://www.amazon.com/Arimaa-Strategies-Tactics-Jean-Daligault/dp/145288417X) by Jean Daligault
+
+If you want a fancy Arimaa table handcrafted in Romania,
+[art3lier](https://www.facebook.com/lemnivor/) made several beautiful wooden
+ones for me and my friend that introduced me to the game.
+
+![Wooden Arimaa table by art3lier](/images/IMG_8915.jpg)

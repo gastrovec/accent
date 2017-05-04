@@ -70,11 +70,10 @@ animal of theirs. However, for a *push* or a *pull* **two steps** are required.
 A piece in a trap, is removed from the game if it has no friendly adjacent
 piece.
 
-## Various tips and wishes for you:
+## Various tips and wishes that I got when I started:
 
 - You are allowed to place your animals on your yard as you wish, only with the
-elephant you can have some issues. The goal is to bring one of your rabbits to
-the last line of the garden of your enemy.
+elephant you can have some issues.
 
 - Take care to not leave your cat to fall in one of the traps. Same for the
 horses and the dogs. They are good animals to have in your yard.
